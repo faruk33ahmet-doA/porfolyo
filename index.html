@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmet Faruk Doğan — AI Araştırmacısı</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-bar"></div>
+    <span class="loader-text">AFD</span>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-brand">Ahmet Faruk<br><em>Doğan</em></a>
+    <div class="nav-center">
+      <span class="nav-status"><span class="pulse"></span>Açık İş Birlikleri</span>
+    </div>
+    <div class="nav-right">
+      <a href="#projeler" class="nav-link">Projeler</a>
+      <a href="#iletisim" class="btn-nav magnetic">İletişim</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menü">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#hakkimda" class="mobile-link">Hakkımda</a>
+    <a href="#projeler" class="mobile-link">Projeler</a>
+    <a href="#beceriler" class="mobile-link">Beceriler</a>
+    <a href="#iletisim" class="mobile-link">İletişim</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-eyebrow">
+      <span class="line-h"></span>
+      <span>01 / İstanbul, Türkiye</span>
+    </div>
+
+    <div class="hero-headline">
+      <div class="headline-row row-1">
+        <span class="char-big split-text">AHMET</span>
+        <div class="hero-badge">
+          <span>İktisat</span>
+          <span class="badge-sep">×</span>
+          <span>Yapay Zeka</span>
+        </div>
+      </div>
+      <div class="headline-row row-2">
+        <span class="char-big italic split-text">Faruk</span>
+        <span class="char-big split-text">DOĞAN</span>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-desc split-text">
+        Büyük dil modelleri, Anthropic ekosistemi<br>
+        ve yapay zekanın geleceği üzerine çalışıyorum.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">AI Projesi</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="2024">0</span>
+          <span class="stat-label">Başlangıç</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="100">0</span>
+          <span class="stat-label">% Yapay Zeka Odağı</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projeler" class="btn-primary magnetic">Projeleri Keşfet <span class="arrow">↗</span></a>
+        <a href="mailto:faruk.33ahmet@gmail.com" class="btn-outline magnetic">E-posta</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Kaydır</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Claude API</span><span class="sep">—</span>
+      <span>Prompt Mühendisliği</span><span class="sep">—</span>
+      <span>Büyük Dil Modelleri</span><span class="sep">—</span>
+      <span>Anthropic</span><span class="sep">—</span>
+      <span>AI Etik</span><span class="sep">—</span>
+      <span>Claude Code</span><span class="sep">—</span>
+      <span>LLM Entegrasyonu</span><span class="sep">—</span>
+      <span>İktisat</span><span class="sep">—</span>
+      <span>Claude API</span><span class="sep">—</span>
+      <span>Prompt Mühendisliği</span><span class="sep">—</span>
+      <span>Büyük Dil Modelleri</span><span class="sep">—</span>
+      <span>Anthropic</span><span class="sep">—</span>
+      <span>AI Etik</span><span class="sep">—</span>
+      <span>Claude Code</span><span class="sep">—</span>
+      <span>LLM Entegrasyonu</span><span class="sep">—</span>
+      <span>İktisat</span><span class="sep">—</span>
+    </div>
+  </div>
+
+  <!-- HAKKIMDA -->
+  <section id="hakkimda" class="reveal-section">
+    <div class="section-label">02 / Hakkımda</div>
+    <div class="about-layout">
+      <div class="about-pull">
+        <blockquote>
+          "Yapay zeka benim için bir araç değil —<br>
+          <em>bir dil.</em>"
+        </blockquote>
+        <div class="about-img-frame">
+          <div class="img-inner">
+            <div class="img-placeholder">AFD</div>
+          </div>
+          <div class="img-label">İstanbul, 2026</div>
+        </div>
+      </div>
+      <div class="about-body">
+        <p>
+          İktisat okuyorum ama kafam başka yerde. Son yıllarda yapay zekayla —
+          özellikle Anthropic'in Claude ekosistemiyle — derinden ilgileniyorum.
+        </p>
+        <p>
+          Sorum şu: <strong>Yapay zeka gerçekten ne yapabilir?</strong> Bu soruyu
+          teoride değil pratikte yanıtlamak istiyorum. Claude API'si, prompt
+          mühendisliği, AI etik ve araçların sınırlarını keşfeden projeler üretiyorum.
+        </p>
+        <p>
+          Geleneksel bir kariyer değil — yapay zekayla anlam taşıyan şeyler
+          inşa etmeyi hedefliyorum.
+        </p>
+        <div class="about-tags">
+          <div class="atag"><span class="atag-num">01</span>Claude Ekosistemi</div>
+          <div class="atag"><span class="atag-num">02</span>Prompt Mühendisliği</div>
+          <div class="atag"><span class="atag-num">03</span>AI Araştırma</div>
+          <div class="atag"><span class="atag-num">04</span>İktisat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJELER -->
+  <section id="projeler" class="reveal-section">
+    <div class="section-label">03 / Projeler</div>
+    <div class="section-head">
+      <h2>Seçilmiş<br><em>Çalışmalar</em></h2>
+      <a href="https://github.com/faruk33ahmet-doA" target="_blank" class="all-link">
+        Tümünü Gör <span>↗</span>
+      </a>
+    </div>
+
+    <div class="bento">
+
+      <article class="bento-card bento-wide">
+        <div class="card-num">01</div>
+        <div class="card-body">
+          <div class="card-icon">⚡</div>
+          <h3>Claude Code in Action</h3>
+          <p>Claude Code'u gerçek dünya senaryolarında nasıl kullanabileceğinizi gösteren pratik rehber ve örnekler koleksiyonu.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>Claude Code</span><span>AI</span><span>HTML</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA/Claude-Code-in-Action" target="_blank" class="card-link">
+            GitHub <span>↗</span>
+          </a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+      <article class="bento-card bento-tall">
+        <div class="card-num">02</div>
+        <div class="card-body">
+          <div class="card-icon">⚖️</div>
+          <h3>Yapay Zeka ile Etik Çalışma Rehberi</h3>
+          <p>AI araçlarını sorumlu ve etik bir şekilde kullanmak için kapsamlı rehber.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>AI Etik</span><span>Rehber</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA/Yapay-Zeka-ile-Etik-al-ma-Rehberi" target="_blank" class="card-link">
+            GitHub <span>↗</span>
+          </a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+      <article class="bento-card bento-small">
+        <div class="card-num">03</div>
+        <div class="card-body">
+          <div class="card-icon">🏆</div>
+          <h3>Anthropic Projeleri</h3>
+          <p>Anthropic ekosistemi araçlarıyla geliştirilen deneysel uygulamalar.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>Anthropic</span><span>Claude</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA/anthropic-projeler" target="_blank" class="card-link">GitHub <span>↗</span></a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+      <article class="bento-card bento-small">
+        <div class="card-num">04</div>
+        <div class="card-body">
+          <div class="card-icon">✉️</div>
+          <h3>Claude ile Profesyonel E-posta</h3>
+          <p>Claude kullanarak profesyonel e-postalar yazmak için pratik rehber ve şablonlar.</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-tags">
+            <span>Prompt</span><span>Claude</span>
+          </div>
+          <a href="https://github.com/faruk33ahmet-doA/Claude-ile-Profesyonel-E-posta-Yazma-Rehberi" target="_blank" class="card-link">GitHub <span>↗</span></a>
+        </div>
+        <div class="card-hover-bg"></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- BECERİLER -->
+  <section id="beceriler" class="reveal-section">
+    <div class="section-label">04 / Beceriler</div>
+    <div class="skills-layout">
+      <div class="skills-col">
+        <div class="skill-group">
+          <h4>Yapay Zeka</h4>
+          <ul>
+            <li><span class="sk-dot"></span>Claude API</li>
+            <li><span class="sk-dot"></span>Prompt Mühendisliği</li>
+            <li><span class="sk-dot"></span>Claude Code</li>
+            <li><span class="sk-dot"></span>LLM Entegrasyonu</li>
+            <li><span class="sk-dot"></span>AI Etik & Güvenlik</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills-col">
+        <div class="skill-group">
+          <h4>Geliştirme</h4>
+          <ul>
+            <li><span class="sk-dot"></span>HTML / CSS</li>
+            <li><span class="sk-dot"></span>JavaScript</li>
+            <li><span class="sk-dot"></span>Git & GitHub</li>
+            <li><span class="sk-dot"></span>Markdown</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Analitik</h4>
+          <ul>
+            <li><span class="sk-dot"></span>İktisat Teorisi</li>
+            <li><span class="sk-dot"></span>Araştırma & Analiz</li>
+            <li><span class="sk-dot"></span>Eleştirel Düşünce</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills-marquee-col">
+        <div class="vert-text">BECERİLER</div>
+        <div class="skill-pills">
+          <span class="pill pill-accent">Claude API</span>
+          <span class="pill">Prompt</span>
+          <span class="pill pill-accent">Anthropic</span>
+          <span class="pill">LLM</span>
+          <span class="pill">Etik</span>
+          <span class="pill pill-accent">AI</span>
+          <span class="pill">Git</span>
+          <span class="pill">HTML</span>
+          <span class="pill">İktisat</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section id="iletisim" class="reveal-section">
+    <div class="section-label">05 / İletişim</div>
+    <div class="contact-layout">
+      <div class="contact-big">
+        <h2>Birlikte<br>bir şeyler<br><em>yapalım.</em></h2>
+      </div>
+      <div class="contact-right">
+        <p>Yapay zeka, projeler veya iş birliği için ulaşın. Her mesajı okurum.</p>
+        <a href="mailto:faruk.33ahmet@gmail.com" class="btn-contact magnetic">
+          faruk.33ahmet@gmail.com <span>↗</span>
+        </a>
+        <div class="contact-socials">
+          <a href="https://github.com/faruk33ahmet-doA" target="_blank" class="social-row">
+            <span class="social-platform">GitHub</span>
+            <span class="social-handle">faruk33ahmet-doA ↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmetfarukdogan/" target="_blank" class="social-row">
+            <span class="social-platform">LinkedIn</span>
+            <span class="social-handle">ahmetfarukdogan ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Ahmet Faruk Doğan</span>
+    <span class="footer-mid">İstanbul, Türkiye</span>
+    <span>Yapay zeka ile inşa edildi</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
